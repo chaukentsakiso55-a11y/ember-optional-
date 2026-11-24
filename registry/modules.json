@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "modules": [
+    {
+      "id": "live-translation",
+      "name": "Live Translation",
+      "version": "0.1.0",
+      "status": "planned",
+      "min_core_version": "0.1.0",
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "network": "optional",
+      "data_handling": "Disclose audio processing; no background recording without visible user control.",
+      "entrypoint": "com.cyberpulse.ember.modules.translation.TranslationModule"
+    },
+    {
+      "id": "notification-reader",
+      "name": "Notification Reader",
+      "version": "0.1.0",
+      "status": "planned",
+      "min_core_version": "0.1.0",
+      "permissions": [
+        "NotificationListenerService user approval"
+      ],
+      "network": "none",
+      "data_handling": "Read only notifications explicitly allowed by the user; local processing by default.",
+      "entrypoint": "com.cyberpulse.ember.modules.notifications.NotificationModule"
+    },
+    {
+      "id": "floating-controls",
+      "name": "Floating Controls",
+      "version": "0.1.0",
+      "status": "planned",
+      "min_core_version": "0.1.0",
+      "permissions": [
+        "SYSTEM_ALERT_WINDOW user approval"
+      ],
+      "network": "none",
+      "data_handling": "Movable on-screen control; user can disable it at any time.",
+      "entrypoint": "com.cyberpulse.ember.modules.overlay.OverlayModule"
+    }
+  ]
+}
